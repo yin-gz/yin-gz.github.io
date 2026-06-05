@@ -479,6 +479,10 @@ p {
   font-size: 0.92rem;
 }
 
+.publication-list:not([data-filter="first"]) .code-link {
+  display: none;
+}
+
 .pub-links span,
 .bibtex-summary {
   color: #aaa;

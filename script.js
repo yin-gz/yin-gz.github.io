@@ -174,11 +174,12 @@ function renderAuthors(authors) {
     .join(", ");
 }
 
-function linkOrPending(url, label) {
+function linkOrPending(url, label, className = "") {
+  const classAttr = className ? ` class="${className}"` : "";
   if (!url) {
-    return `<span>${label}</span>`;
+    return `<span${classAttr}>${label}</span>`;
   }
-  return `<a href="${url}" target="_blank" rel="noreferrer">${label}</a>`;
+  return `<a href="${url}" target="_blank" rel="noreferrer"${classAttr}>${label}</a>`;
 }
 
 function escapeHtml(value) {
@@ -262,7 +263,7 @@ function renderPublications() {
           <p class="pub-authors">${renderAuthors(pub.authors)}</p>
           <div class="pub-links">
             ${linkOrPending(pub.paper, "Paper")}
-            ${linkOrPending(pub.code, "Code")}
+            ${linkOrPending(pub.code, "Code", "code-link")}
             <details class="bibtex-details">
               <summary class="bibtex-summary">BibTeX</summary>
               <pre class="bibtex-block"><code>${escapeHtml(renderBibtex(pub, index))}</code></pre>
