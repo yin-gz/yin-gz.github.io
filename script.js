@@ -56,8 +56,8 @@ const publications = [
   },
   {
     title: "Ignite Forecasting with SPARK: An Efficient Generative Framework for Refining LLMs in Temporal Knowledge Graph Forecasting",
-    venue: "DASFAA / LNCS, 2026",
-    year: "2026",
+    venue: "DASFAA, 2025 / LNCS, published January 2026",
+    year: "2025",
     type: "conference",
     firstAuthor: true,
     image: "graph/ScreenShot_2026-06-04_195415_673.png",
