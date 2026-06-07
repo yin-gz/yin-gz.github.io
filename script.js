@@ -7,7 +7,7 @@ const publications = [
     firstAuthor: true,
     image: "graph/群体认知.png",
     authors: ["尹公主", "张宏莉", "田逸艺", "田泽庶", "孟辰", "何嘉豪", "黄圣鹏"],
-    paper: "https://doi.org/10.11959/j.issn.1000-436x.2026034",
+    paper: "https://www.joconline.com.cn/zh/article/doi/10.11959/j.issn.1000-436x.2026034",
     code: ""
   },
   {
